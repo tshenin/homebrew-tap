@@ -1,6 +1,6 @@
 cask "prlauncher" do
   version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "fbb1795cdac82e2c702cced51172e1bea83e7e616c68c13b1305651818282da9"
 
   url "https://github.com/tshenin/launcher/releases/download/v#{version}/PRLauncher-#{version}.dmg"
   name "PRLauncher"
