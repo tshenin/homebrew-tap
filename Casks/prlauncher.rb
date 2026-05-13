@@ -1,6 +1,6 @@
 cask "prlauncher" do
-  version "1.0.1"
-  sha256 "fe3bf1131fdfa105b4b1de8bd9c6138a0d8a5382d969c0c6659bf293d112b772"
+  version "1.0.0"
+  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
   url "https://github.com/tshenin/homebrew-tap/releases/download/v#{version}/PRLauncher-#{version}.dmg"
   name "PRLauncher"
@@ -16,6 +16,19 @@ cask "prlauncher" do
   depends_on macos: ">= :ventura"
 
   app "PRLauncher.app"
+
+  caveats <<~EOS
+    PRLauncher is not signed with an Apple Developer ID. On first launch
+    macOS will block the app. To allow it:
+
+      1. Open System Settings -> Privacy & Security
+      2. Scroll down and click "Open Anyway" next to PRLauncher
+      3. Authenticate when prompted
+
+    Or, from the terminal:
+
+      xattr -dr com.apple.quarantine /Applications/PRLauncher.app
+  EOS
 
   zap trash: [
     "~/Library/Preferences/com.prlauncher.app.plist",
