@@ -1,6 +1,6 @@
 cask "prlauncher" do
-  version "1.0.0"
-  sha256 "fbb1795cdac82e2c702cced51172e1bea83e7e616c68c13b1305651818282da9"
+  version "1.0.1"
+  sha256 "fe3bf1131fdfa105b4b1de8bd9c6138a0d8a5382d969c0c6659bf293d112b772"
 
   url "https://github.com/tshenin/homebrew-tap/releases/download/v#{version}/PRLauncher-#{version}.dmg"
   name "PRLauncher"
